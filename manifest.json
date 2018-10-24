@@ -1,0 +1,27 @@
+{
+
+  "manifest_version": 2,
+  "name": "Extract Acquia Users List",
+  "version": "1.0",
+
+  "description": "Extracts a list of users from your team management page on cloud.acquia.com.",
+
+  "permissions": [
+    "<all_urls>",
+    "tabs",
+    "downloads"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "page_action": {
+    "browser_style": true,
+    "default_icon": {
+      "32": "icons/json.png"
+    },
+    "default_title": "Download users JSON"
+  }
+
+}
